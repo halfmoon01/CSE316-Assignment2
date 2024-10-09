@@ -195,6 +195,11 @@
     background-color: gray;
 }
 
+.side-bar li{
+    margin: 0;
+    padding: 0;
+}
+
 /* Media queries for large and small screens */
 @media (min-width: 600px) {
     .navbar-large {

@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Navbar from './components/Navbar';
 import './App.css';
 import Home from './pages/Home';
+import MyInfo from './pages/MyInfo';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Navigate to="/home" replace />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/my-info" element={<MyInfo />}/>
         </Routes>
       </div>
     </Router>
