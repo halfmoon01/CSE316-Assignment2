@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import './App.css';
 import Home from './pages/Home';
 import MyInfo from './pages/MyInfo';
-
+import FacilityList from './pages/FacilityList';
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
           <Route path="/" element={<Navigate to="/home" replace />} />
           <Route path="/home" element={<Home />} />
           <Route path="/my-info" element={<MyInfo />}/>
+          <Route path="/facility-list" element={<FacilityList />}/>
         </Routes>
       </div>
     </Router>
