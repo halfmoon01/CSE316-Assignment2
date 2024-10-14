@@ -52,16 +52,6 @@ const facilities = [
     location: "A1011",
     availableTo: "Only for SUNY Korea",
     image: "/FacilityImage/library.jpg"
-  },
-
-  { // add new block to see if adds black space in odd cases
-    name: "Library",
-    description: "A quiet place",
-    days: "Mon, Tue, Wed, Thu, Fri, Sat, Sun",
-    participants: "1 - 20",
-    location: "A1011",
-    availableTo: "Only for SUNY Korea",
-    image: "/FacilityImage/library.jpg"
   }
 ];
 

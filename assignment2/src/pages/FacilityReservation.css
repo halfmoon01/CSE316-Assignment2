@@ -1,0 +1,60 @@
+.select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.text{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.radio{
+    margin-bottom: 15px;
+}
+
+
+.reservation-container{
+    padding: 20px;
+}
+
+.selected-container{
+    width: 100%;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.selected-image{
+    width: 400px;
+    height: 250px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.selected-details{
+    min-width: 300px;
+}
+.selected-details h2 {
+    font-size: 25px;
+    margin: 0;
+  }
+  
+.selected-details p {
+    margin: 10px 0;
+  }
+
+  .reservation-submit{
+    background-color: blue;
+    color: white;
+    padding: 6px 10px; 
+    font-size: 15px; 
+    cursor: pointer;
+    border-radius: 5px;
+}
