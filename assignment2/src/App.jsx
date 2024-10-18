@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import MyInfo from './pages/MyInfo';
 import FacilityList from './pages/FacilityList';
 import FacilityReservation from './pages/FacilityReservation';
+
 function App() {
   return (
     <Router>
@@ -17,7 +18,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/my-info" element={<MyInfo />}/>
           <Route path="/facility-list" element={<FacilityList />}/>
-          <Route path="/facility-reservation" element={<FacilityReservation />} /> 
+          <Route path="/facility-reservation" element={<FacilityReservation />} />
         </Routes>
       </div>
     </Router>
