@@ -1,0 +1,37 @@
+.list-container{
+    background-color: white;
+    display: flex;
+    padding: 20px; 
+    margin: 20px 20px;
+    border-radius: 15px;
+}
+
+.list-image{
+    width: 400px;
+    height: 250px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.list-detail{
+    min-width: 500px;
+}
+
+.list-detail h2 {
+    font-size: 25px;
+    margin: 0;
+  }
+  
+.list-detail p {
+    margin: 10px 0;
+  }
+
+.cancel-button{
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+    padding: 6px 10px; 
+    font-size: 15px; 
+    cursor: pointer;
+    border-radius: 5px;
+}

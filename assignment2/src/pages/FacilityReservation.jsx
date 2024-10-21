@@ -106,6 +106,8 @@ function FacilityReservation() {
     const reservationData = {
       ...formData,
       facility: selectedFacility.name, 
+      image: selectedFacility.image,
+      location: selectedFacility.location,
       date: f_date,
       people: f_people,
       affiliation: f_affiliation,
@@ -214,7 +216,6 @@ function computeDayOfWeek(year, month, day) {
   let q = parseInt(day);
   let m = parseInt(month);
   let y = parseInt(year);
-
   if (m === 1 || m === 2) {
     m += 12;
     y -= 1;
