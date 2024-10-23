@@ -1,3 +1,6 @@
+//Sanghyun Jun
+//Sanghyun.Jun.1@stonybrook.edu
+
 const facilities = [
   {
     name: "Gym",
@@ -54,7 +57,7 @@ const facilities = [
     image: "/FacilityImage/library.jpg"
   },
   {
-    name: "Library",
+    name: "Facility1",
     description: "A quiet place",
     days: "Mon, Tue, Wed, Thu, Fri, Sat, Sun",
     participants: "1 - 20",

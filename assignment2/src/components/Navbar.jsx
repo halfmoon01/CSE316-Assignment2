@@ -1,3 +1,7 @@
+//Sanghyun Jun
+//Sanghyun.Jun.1@stonybrook.edu
+
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import homeIcon from '../AssignImages/home.png';
@@ -33,8 +37,8 @@ const Navbar = () => {
             <li className="dropdown">
               <a href="#">User<span className="upsidedown-triangle"></span></a>
               <div className="dropdown-content">
-                <Link to="/my-info">My Information</Link>
-                <Link to="/my-reservation">My Reservation</Link>
+                <Link to="/my-info">User Information</Link>
+                <Link to="/my-reservation">Reservation History</Link>
               </div>
             </li>
           </div>
@@ -71,8 +75,8 @@ const Navbar = () => {
           <li className="dropdown">
             <a href="#">User<span className="upsidedown-triangle"></span></a>
             <div className="dropdown-content">
-              <Link to="/my-info">My Information</Link>
-              <Link to="/my-reservation">My Reservation</Link>
+              <Link to="/my-info">User Information</Link>
+              <Link to="/my-reservation">Reservation History</Link>
             </div>
           </li>
         </ul>

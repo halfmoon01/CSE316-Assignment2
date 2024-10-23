@@ -1,3 +1,6 @@
+//Sanghyun Jun
+//Sanghyun.Jun.1@stonybrook.edu
+
 import React, { useState } from "react";
 import facilities from '../Facility_Data.js';
 import Calendar from '@mui/icons-material/CalendarToday'; 
@@ -18,7 +21,7 @@ function FacilityReservation() {
   const FacilitySelect = (event) => {
     const selectedName = event.target.value;
     const facility = facilities.find(
-        f => f.name === selectedName
+        f => (f.name === selectedName)
     );
     setSelectedFacility(facility);
   };
@@ -96,12 +99,14 @@ function FacilityReservation() {
       errors.push(`6: Cannot reserve: The facility is not available on ${DayOfWeek}.`);
     }
 
+    // if errors happened, join every alert 
     if (errors.length > 0) {
       alert(errors.join("\n"));
       return;
     }else{
       alert("Reservation Success");
     }
+
 
     const reservationData = {
       ...formData,
@@ -114,7 +119,9 @@ function FacilityReservation() {
       purpose: f_purpose
     };
   
+    // push them
     ReservationList.push(reservationData);
+    // using setItem, store in localStorage
     localStorage.setItem(selectedFacility.name, JSON.stringify(ReservationList));
 
     // Reset the form data after submission
@@ -149,10 +156,10 @@ function FacilityReservation() {
             <div className="selected-details">
                 <h2>{selectedFacility.name}</h2>
                 <p>{selectedFacility.description}</p>
-                <p><Calendar /> {selectedFacility.days}</p>
-                <p><People /> {selectedFacility.participants}</p>
-                <p><Location /> {selectedFacility.location}</p>
-                <p><Available /> {selectedFacility.availableTo}</p>
+                <p><Calendar style={{ fontSize: 'clamp(12px, 2vw, 18px)' }}/> {selectedFacility.days}</p>
+                <p><People style={{ fontSize: 'clamp(12px, 2vw, 18px)' }}/> {selectedFacility.participants}</p>
+                <p><Location style={{ fontSize: 'clamp(12px, 2vw, 18px)' }}/> {selectedFacility.location}</p>
+                <p><Available style={{ fontSize: 'clamp(12px, 2vw, 18px)' }}/> {selectedFacility.availableTo}</p>
             </div>
         </div>
 

@@ -1,3 +1,8 @@
+/*
+Sanghyun Jun
+Sanghyun.Jun.1@stonybrook.edu
+*/
+
 .facility-list {
     margin-left: 0;
     display: grid;
@@ -49,8 +54,8 @@
     margin: 10px 0;
   }
 
- .black-block {
-    background-color: white;
+ .blank-block {
+    background-color: rgb(230,230,250);
     width: 400px;
     height: 450px;
   }

@@ -1,3 +1,6 @@
+//Sanghyun Jun
+//Sanghyun.Jun.1@stonybrook.edu
+
 import React from 'react';
 import './Home.css'
 

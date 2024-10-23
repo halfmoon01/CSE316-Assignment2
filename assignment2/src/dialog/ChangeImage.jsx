@@ -1,16 +1,22 @@
+//Sanghyun Jun
+//Sanghyun.Jun.1@stonybrook.edu
+
 import React, { useState } from 'react';
 import Dialog from './Dialog';
 
 const ChangeImage = ({ isOpen, onClose }) => {
   const [selectedFileName, setSelectedFileName] = useState('No file chosen');
-
+  
   const handleFileChange = (event) => {
+    // Check if at least one element is selected
     if (event.target.files.length > 0) {
+      // Update the state with first selected file
       setSelectedFileName(event.target.files[0].name);
     }
   };
 
   return (
+    //isOpen -> open dialog
     isOpen && (
       <Dialog
         title="Change your image"

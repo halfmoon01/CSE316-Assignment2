@@ -1,7 +1,11 @@
+//Sanghyun Jun
+//Sanghyun.Jun.1@stonybrook.edu
+
 import React from 'react';
 import '../dialog/Dialog.css';
 
 const Dialog = ({ title, content, onClose, onSave }) => {
+  // use onClose and onSave when clicking
   return (
     <div className="dialog">
       <div className="content">

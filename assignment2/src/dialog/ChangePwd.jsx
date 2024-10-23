@@ -1,9 +1,13 @@
+//Sanghyun Jun
+//Sanghyun.Jun.1@stonybrook.edu
+
 import React, { useState } from 'react';
 import Dialog from './Dialog';
 
 const ChangePwd = ({ isOpen, onClose }) => {
   const [newPassword, setNewPassword] = useState('');
   return (
+    //isOpen -> open dialog
     isOpen && (
       <Dialog
         title="Change your password"
